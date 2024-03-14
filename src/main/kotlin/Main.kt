@@ -6,7 +6,6 @@ fun main(args: Array<String>) {
     var sumaFilas = Array(m.size){0}
     var sumaColum = Array(m[0].size){0}
 
-
     for (f in m.indices){
         for (c in m[f].indices){
             print("${m[f][c]} ")
@@ -25,20 +24,15 @@ fun main(args: Array<String>) {
         f++
     }
 
-    sumar2(m,sumaColum)
+    sumaColumnas(m,sumaColum)
     println("La suma de las filas es")
     println(Arrays.toString(sumaFilas))
     println("La suma de las columnas es")
     println(Arrays.toString(sumaColum))
 
-
 }
 
-
-
-
-
-fun sumar2 (m:Array<Array<Int>>, sumaColumnas:Array<Int>){
+fun sumaColumnas(m:Array<Array<Int>>, sumaColumnas:Array<Int>){
     var f: Int = 0
     var c: Int = 0
 
